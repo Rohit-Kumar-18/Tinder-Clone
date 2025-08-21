@@ -138,6 +138,9 @@
             border: 1px solid hsl(0, 0%, 65%);
             border-radius: 50px;
         }
+        #page1-something h5{
+            font-weight: 400;
+        }
 
         #moving-div {
             margin-top: 10vh;
@@ -187,14 +190,114 @@
             right: 0;
             z-index: 2;
         }
-
-
         #page2 {
             min-height: 100vh;
             width: 100%;
             background-color: #111;
+             position: relative; 
+             padding: 0vw 10.5vw;
+             padding-bottom: 8vw;
+             border-top: 1px solid #333;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
         }
-
+        #page2-left{
+            height: 100vh;
+            width: 30vw;
+            /* background-color: #333; */
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column; 
+            padding-top: 3vw;
+            padding-bottom: 12vw;
+        }
+        #page2-left p{
+            font-size: 0.8vw;
+        }
+        #page2-left h5{
+            font-size: 1.1vw;
+            font-weight: 400;
+            width: 75%;
+        }
+        #page2-right{
+            height: 100vh;
+            width: 39vw;
+            /* background-color: #333; */
+        }
+        .right-elem h2{
+            font-size: medium;
+            font-weight: 500;
+        }
+         .right-elem{
+            /* background-color: red; */
+            padding-top: 2vw;
+            
+            border-bottom: 1px solid #333;
+         }
+        .right-elem img{
+            height: 6.5vw;
+            width: 6.5vw;
+            border-radius: 50%;
+            object-fit: cover;
+            opacity: 0;
+            scale: 0;
+        }
+        #page4{
+           min-height: 100vh;
+            width: 100%;
+            background-color: #fff;
+            position: relative;
+            padding-bottom: 13vh;
+        }
+        .section{
+            width: 100%;
+            height: 72vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13vh 10vw;
+            padding-bottom: 0;
+        }
+        .sec-left{
+            height: 100%;
+            width: 25%;
+            padding-top: 3vh;
+            border-top: 2px solid black;
+        }
+        .sec-left h2{
+            font-size: 2vw;
+            font-weight: 500;
+            color: #111;
+        }
+        .sec-left p{
+            color: #111;
+            margin-top: 10vh;
+            font-size: 1.2vw;
+            width: 80%;
+        }
+        .sec-right{
+            height: 100%;
+            width: 70%;
+            background-color: aqua;
+            position: relative;
+        }
+        .sec-right img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .sec-right video{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity ease 0.1s;
+        }
         @media (max-width: 768px) {
             nav {
                 padding: 4vw;
