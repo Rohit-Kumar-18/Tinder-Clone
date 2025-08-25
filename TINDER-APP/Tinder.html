@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.983));
+        }
+    </style>
+</head>
+<body>
+  <div class="w-full h-screen bg-black">
+     <div class="imagecontainer w-full h-screen relative">
+         <div class="maincard z-[3] w-full absolute h-screen">
+            <img id="mainImage" class="w-full h-full object-cover" src="" alt="">  
+         </div>
+         <div class="incommingcard z-[2] w-full absolute h-screen">
+            <img id="incomingImage" class="w-full h-full object-cover" src="" alt="">
+         </div>
+     </div>
+
+    <div class="absolute top-0 left-0 w-full z-[4] h-screen flex flex-col justify-between">
+        <div class="navbar px-5 py-6 flex justify-between items-center text-white">
+            <div class="prflimg w-[3rem] h-[3rem] rounded-full overflow-hidden">
+                <img id="profilePic" class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <h3 class="tracking-tight text-xl text-red-600 font-medium">They Liked You </h3>
+            <div class="chaticon relative flex items-center justify-center rounded-full w-[3rem] h-[3rem] bg-white/20">
+                <i class="text-black/60 ri-chat-3-fill"></i>
+                <div class="badge flex items-center justify-center rounded-full absolute top-0 right-0 -translate-y-[5px] translate-x-[5px] w-5 h-5 bg-red-600">
+                    <h5 class="text-xs">5</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailscontainer w-full">
+            <div class="details  px-5 py-6 w-full">
+                <div class="elements location flex gap-4">
+                    <i class=" w-[1.6rem] h-[1.6rem] bg-white flex items-center justify-center rounded-full ri-corner-left-up-line"></i>
+                    <h3 id="location" class="text-white">USA,California</h3>
+                </div>
+                <div class="elements name flex gap-5 text-white mt-1">
+                    <h1 id="name" class="text-7xl tracking-tighter">Victoria</h1>
+                    <h1 id="age" class="text-7xl tracking-tighter opacity-60">22</h1>
+                </div>
+                <div id="tags" class="elements tags flex gap-3 text-white mt-4"></div>
+                <div class="elements text-white/80 mt-5">
+                    <h3 class="text-2xl">Bio</h3>
+                    <p id="bio" class="text-xl font-medium mt-2"></p>
+                </div>
+                <div class="elements flex items-start mt-10 gap-1">
+                    <button id="denyBtn" class="deny py-3 rounded-xl w-1/2 bg-white">
+                        <i class="text-3xl font-semibold ri-close-large-line"></i>
+                    </button>
+                    <button id="acceptBtn" class="accept py-3 rounded-xl w-1/2 bg-red-500">
+                        <i class="text-3xl font-semibold text-white ri-heart-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+  <script src="tinder.js"></script>
+</body>
+</html>
+
+
+
+
+
+
